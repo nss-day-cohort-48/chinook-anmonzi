@@ -5,4 +5,5 @@ SELECT
     BillingCountry
 FROM Customer
 JOIN Invoice
-    ON Customer.CustomerId = Invoice.CustomerId;
+    ON Customer.CustomerId = Invoice.CustomerId
+WHERE BillingCountry = "Brazil";
