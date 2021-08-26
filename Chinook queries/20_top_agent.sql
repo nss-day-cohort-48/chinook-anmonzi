@@ -1,6 +1,6 @@
 SELECT 
     TotalSales.Fullname,
-    SUM(TotalSales.Total) as MostSalesOverall
+    MAX(TotalSales.Total) as MostSalesOverall
 FROM (
         SELECT
             e.FirstName || ' ' || e.LastName as FullName,
